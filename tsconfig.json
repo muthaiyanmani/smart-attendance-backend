@@ -1,0 +1,27 @@
+{
+  "include": [
+    "src", "decs.d.ts"
+  ],
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "strict": false,
+    "strictNullChecks":false,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "paths": {
+      "@common/*": ["src/common/*"],
+      "@infrastructure/*": ["src/infrastructure/*"],
+      "@modules/*": ["src/use-cases/*"]
+    },
+  }
+}
