@@ -30,6 +30,7 @@
     "preseed:clean": "ts-node -r tsconfig-paths/register src/seed-clean.ts",
     "seed:clean": "npm run seed"
   },
+  "heroku-run-build-script": true,
   "husky": {
     "hooks": {
       "pre-commit": "npm run prettier-format && npm run lint"
