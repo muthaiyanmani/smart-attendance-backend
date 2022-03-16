@@ -58,4 +58,11 @@ export class ConfigService {
       namingStrategy: new SnakeNamingStrategy()
     };
   }
+
+  getJWTSecret(): any {
+    return {
+        secret: process.env.JWT_SECRET,
+        signOptions: { expiresIn: process.env.JWT_EXPIRES_IN }
+    }
+}
 }

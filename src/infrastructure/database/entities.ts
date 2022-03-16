@@ -1,4 +1,5 @@
 /* PLOP_INJECT_IMPORT */
+import { User } from './user/user.entity';
 import { MetaData } from './meta-data/meta-data.entity';
 import { Language } from './language/language.entity';
 import { Attendance } from './attendance/attendance.entity';
@@ -10,6 +11,7 @@ import { Standard } from './standard/standard.entity';
 
 export default [
   /* PLOP_INJECT_ENTITY */
+User,
 MetaData,
 Language,
 Attendance,
